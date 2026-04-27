@@ -1,0 +1,200 @@
+.search-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-flow: column;
+  grid-template-rows: auto auto auto;
+  color: #FFFFFF;
+  align-self: flex-end;
+  position: relative;
+  padding: 20px 22px 52px;
+  margin-top: 250px;
+  flex-basis: 100%;
+}
+
+.search-form-horizontal {
+  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: row;
+  column-gap: 38px;
+}
+
+.search-form::before {
+  position: absolute;
+  background-color: #292929;
+  content: "";
+  opacity: 0.8;  
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.search-form__value {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 3;
+  margin-top: 60px;
+}
+
+.search-form__value-direction {
+  z-index: 5;
+}
+
+.search-form__value-date {
+  z-index: 4;
+}
+
+.search-form__title {
+  font-size: 30px;
+  font-weight: 300;
+  margin: 0 0 5px 5px;
+}
+
+.search-form__container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  gap: 38px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
+input[type="date"]::-webkit-inner-spin-button {
+  display: none;
+  -webkit-appearance: none;
+}
+
+input[type="date"] {
+  appearance: none;
+  -moz-appearance: textfield;
+}
+
+.header_location_icon {
+  position: absolute;
+  left: 287px;
+  top: 15px;
+}
+
+.second {
+  position: absolute;
+  left: 645px;
+  top: 15px;
+}
+
+.rotate_icon {
+  width: 26px;
+  height: 26px;
+  align-self: center;
+  margin: 0 5px;
+}
+
+.search-form__input {
+  width: 100%;
+  font-size: 18px;
+  padding: 20px 70px 20px 20px;
+  border-radius: 5px;
+}
+
+.search-form__input::placeholder {
+  color: #C4C4C4;
+}
+
+input::-webkit-datetime-edit {
+  font-size: 18px;
+  font-weight: 400;
+  color: #C4C4C4;
+  text-transform: uppercase;
+}
+
+.search-form__button {
+  margin-top: 92px;
+  z-index: 3;
+  grid-column: span 2;
+  justify-self: end;
+  width: calc(50% - 38px/2);
+}
+
+.search-form__button .btn {
+  width: 100%;
+}
+
+.search-form-horizontal  .search-form__button {
+  width: calc(25% - 38px);
+  margin-top: 47px;
+}
+
+.form__input-icon {
+  position: relative;
+  flex-basis: 100%;
+} 
+
+.search-form__autocomplete {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 8px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+}
+
+.search-form__autocomplete-item {
+  border: 0;
+  border-radius: 4px;
+  background: transparent;
+  color: #292929;
+  font-size: 18px;
+  text-align: left;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.search-form__autocomplete-item:hover {
+  background-color: #f3f2f2;
+}
+
+.search-form__autocomplete-status {
+  margin: 0;
+  padding: 12px;
+  color: #292929;
+  font-size: 16px;
+}
+
+.form__input__date,
+.form__input__location {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+}
+
+.form__input__location {
+  width: 20px;
+  height: 30px;
+  background-image: url("/public/icons/location.svg");
+}
+
+.form__input__date {
+  width: 30px;
+  height: 33px;
+  background-image: url("/public/icons/calendar.svg");
+}
+
+.form__input__rotate {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) translateX(50%);
+  right: 50%;
+  width: 24px;
+  height: 24px;
+  background-image: url("/public/icons/rotate.svg");
+}

@@ -1,0 +1,65 @@
+.direction-filter.direction-filter_expanded {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 34px 0 28px;
+}
+
+.direction-filter__header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 17px;
+  width: 100%;
+  padding: 0;
+  border: none;
+  color: inherit;
+  background: transparent;
+  cursor: pointer;
+}
+
+.direction-filter__header.direction-filter__header_expanded {
+  margin-bottom: 34px;
+}
+
+.direction-filter__title-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.direction-filter__content {
+  display: flex;
+  flex-direction: column;
+  gap: 46px;
+}
+
+.direction-filter__section {
+  display: flex;
+  flex-direction: column;
+}
+
+.direction-filter__section[data-section='arrival'] {
+  text-align: right;
+}
+
+.direction-filter__label {
+  margin-bottom: 18px;
+  font-size: 30px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.filters-opened-icon {
+  width: 20px;
+  height: 20px;
+  background-size: 20px 20px;
+  mask-image: url('/icons/filtersOpened.svg');
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  background-color: #e5e5e5;
+  flex-shrink: 0;
+}

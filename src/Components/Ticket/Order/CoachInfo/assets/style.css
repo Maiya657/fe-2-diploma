@@ -1,0 +1,178 @@
+.coach-info {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  background-color: #ffffff;
+}
+
+.coach-info__sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 204px;
+  background-color: #ffd98f;
+}
+
+.coach-info__number {
+  font-size: 72px;
+  font-weight: 700;
+  color: #292929;
+}
+
+.coach-info__caption {
+  margin-top: 8px;
+  font-size: 24px;
+  color: #292929;
+}
+
+.coach-info__body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px;
+  padding: 32px 36px;
+}
+
+.coach-info__column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.coach-info__label {
+  margin-bottom: 4px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #928f94;
+}
+
+.coach-info__label .coach-info__metric {
+  margin-left: 6px;
+}
+
+.coach-info__metric {
+  font-size: 18px;
+  color: #000000;
+}
+
+.coach-info__price {
+  font-size: 24px;
+  font-weight: 700;
+  color: #292929;
+}
+
+.coach-info__services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.coach-info__service {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border: 2px solid #292929;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #292929;
+  padding: 0;
+}
+
+.coach-info__service_clickable {
+  cursor: pointer;
+}
+
+.coach-info__service_selected {
+  border-color: #ffa800;
+  background-color: #ffa800;
+  color: #ffffff;
+}
+
+.coach-info__service_included {
+  border-color: #fcdc9d;
+  background-color: #fcdc9d;
+  color: #928f94;
+}
+
+.coach-info__service_clickable:hover {
+  border-color: #ffa800;
+  background-color: #ffa800;
+  color: #292929;
+}
+
+.coach-info__service:hover .coach-info__tooltip,
+.coach-info__service:focus-visible .coach-info__tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+.coach-info__service_unavailable {
+  opacity: 1;
+}
+
+.coach-info__service-icon {
+  width: 26px;
+  height: 26px;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  background-color: currentColor;
+}
+
+.coach-info__service-icon_air {
+  mask-image: url('/icons/airCondition.svg');
+}
+
+.coach-info__service-icon_wifi {
+  mask-image: url('/icons/wiFi.svg');
+}
+
+.coach-info__service-icon_linens {
+  mask-image: url('/icons/linens.svg');
+}
+
+.coach-info__services-note {
+  max-width: 260px;
+  font-size: 14px;
+  line-height: 1.35;
+  color: #928f94;
+}
+
+.coach-info__tooltip {
+  position: absolute;
+  top: calc(100% + 14px);
+  left: 50%;
+  z-index: 3;
+  min-width: max-content;
+  max-width: 240px;
+  padding: 12px 18px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 10px 24px rgba(62, 60, 65, 0.24);
+  font-size: 16px;
+  line-height: 1.2;
+  color: #292929;
+  white-space: normal;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-50%) translateY(-6px);
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    visibility 0.2s ease;
+  pointer-events: none;
+}
+
+.coach-info__tooltip::before {
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+  content: "";
+  transform: translateX(-50%) rotate(45deg);
+}

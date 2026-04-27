@@ -1,0 +1,172 @@
+.filter-wrapper {
+  width: 360px;
+  margin-top: 95px;
+  padding: 45px 30px 8px;
+  color: #FFFFFF;
+  background-color: #3E3C41;
+}
+
+.search-form__input-filter {
+  padding: 10px;
+  margin-bottom: 25px;
+}
+
+.search-form__title-filter {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.filter-border {
+  border-top: 1px solid #E5E5E5;
+  margin: 8px -30px 0;
+}
+
+.filter__input__date {
+  width: 20px;
+  height: 22px;
+  background-image: url("/icons/calendar.svg");
+  background-size: 20px 22px;
+}
+
+.checkbox-icon {
+  display: inline-block;
+  width: 72px;
+  height: 28px;
+  background-image: url('/icons/checkboxSprite.svg');
+  background-repeat: no-repeat;
+  background-size: 144px 28px;
+  background-position: 0 0;
+}
+
+.ticket-service-filter input[type="checkbox"]:checked ~ .checkbox-icon {
+  background-position: -72px 0;
+}
+
+.ticket-service-filter input[type="checkbox"] {
+  display: none;
+}
+
+.ticket-service-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  margin-top: 26px;
+}
+
+.ticket-service-filter__class {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 34px;
+  margin: 0 34px 18px;
+}
+
+.custom-label {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 34px;
+}
+
+.compartment-icon {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background-size: 17px 17px;
+  background-image: url('/icons/compartment.svg');
+  flex-shrink: 0;
+}
+
+.reserved-seat-icon {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background-size: 17px 17px;
+  background-image: url('/icons/reservedSeat.svg');
+  flex-shrink: 0;
+}
+
+.seated-carriage-icon {
+  display: inline-block;
+  width: 14px;
+  height: 23px;
+  background-size: 14px 23px;
+  background-image: url('/icons/seatedСarriage.svg');
+  flex-shrink: 0;
+}
+
+.deluxe-icon {
+  display: inline-block;
+  width: 22px;
+  height: 20px;
+  background-size: 22px 20px;
+  background-image: url('/icons/deluxe.svg');
+  flex-shrink: 0;
+}
+
+.wifi-filter-icon {
+  display: inline-block;
+  width: 24px;
+  height: 20px;
+  background-size: 24px 20px;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  background-color: #E5E5E5;
+  mask-image: url('/icons/wiFi.svg');
+  flex-shrink: 0;
+}
+
+.express-filter-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  background-size: 20px 20px;
+  background-image: url('/icons/rocketIcon.svg');
+  flex-shrink: 0;
+}
+
+.direction-filter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+.search-form__title {
+  font-weight: 700;
+}
+
+.direction-icon__from {
+  width: 32px;
+  height: 26px;
+  background-image: url('/icons/subtract.svg');
+  flex-shrink: 0;
+}
+
+.direction-icon__back {
+  width: 32px;
+  height: 26px;
+  background-image: url('/icons/subtract.svg');
+  flex-shrink: 0;
+  transform: scaleX(-1);
+}
+
+.filters-closed-icon {
+  width: 20px;
+  height: 20px;
+  background-size: 20px 20px;
+  mask-image: url('/icons/filtersClosed.svg');
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  background-color: #E5E5E5;
+}
+
+.search-form__title-direction {
+  font-size: 30px;
+  font-weight: 700;
+}

@@ -1,0 +1,59 @@
+.sort-tickets {
+  position: relative;
+}
+
+.sort-tickets__trigger {
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  background: transparent;
+  color: #292929;
+  cursor: pointer;
+  position: relative;
+}
+
+.sort-tickets__trigger:disabled {
+  cursor: default;
+  color: #928F94;
+}
+
+.sort-tickets__trigger:disabled::after {
+  background-color: #c4c4c4;
+}
+
+.sort-tickets__dropdown {
+  position: absolute;
+  top: calc(100% + 16px);
+  left: -12px;
+  z-index: 2;
+  min-width: 204px;
+  background: #f7f5f9;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  border: 1px solid #e5e5e5;
+}
+
+.sort-tickets__option {
+  display: block;
+  width: 100%;
+  border: none;
+  border-top: 1px solid #e5e5e5;
+  padding: 18px 12px 16px;
+  background: transparent;
+  color: #3e3c41;
+  text-align: left;
+  cursor: pointer;
+}
+
+.sort-tickets__option:first-child {
+  border-top: none;
+}
+
+.sort-tickets__option[data-active='true'] {
+  color: #292929;
+  background: #f2eff5;
+}
+
+.sort-tickets__option:hover {
+  color: #FFFFFF;
+  background: #FFCA62;
+}

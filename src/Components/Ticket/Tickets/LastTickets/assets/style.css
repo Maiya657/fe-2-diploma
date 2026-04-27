@@ -1,0 +1,88 @@
+.last-ticket-wrapper {
+  width: 360px;
+  margin-top: 95px;
+}
+
+.last-ticket-list {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  margin-top: 24px;
+}
+
+.last-tickets {
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.last-ticket__status {
+  margin-top: 24px;
+  padding: 20px 24px;
+  border: 1px solid #c4c4c4;
+  background-color: #ffffff;
+  color: #928f94;
+}
+
+.last-ticket-card {
+  border: 1px solid #c4c4c4;
+  box-shadow: 0px 2px 2px 0px #3E3C4125;
+  background-color: #ffffff;
+}
+
+.last-ticket-card:last-child {
+  margin-bottom: 17px;
+}
+
+.last-ticket__direction {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 18px 18px 0px;
+}
+
+.last-ticket__direction-city {
+  font-size: 20px;
+  font-weight: 400;
+  color: #292929;
+}
+
+.last-ticket__direction-station {
+  margin-top: 6px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #928f94;
+}
+
+.last-ticket__direction-to {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.last-ticket__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 28px 18px 18px;
+}
+
+.last-ticket__price {
+  font-size: 36px;
+  font-weight: 700;
+  color: #FFA800;
+}
+
+.ticket-service {
+  margin-bottom: 0;
+}
+
+.last-ticket-currency {
+  margin-left: 8px;
+  font-size: 34px;
+  font-weight: 400;
+  color: #928f94;
+}

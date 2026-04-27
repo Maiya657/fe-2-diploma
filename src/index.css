@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  font-family: Roboto, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.btn {
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 15px;
+}
+
+.btn.primary {
+  background-color: #FFA800;
+}

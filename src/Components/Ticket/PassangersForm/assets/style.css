@@ -1,0 +1,366 @@
+.passangers-form-wrapper {
+  border: 1px solid #c4c4c4;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px rgba(62, 60, 65, 0.08);
+}
+
+.passangers-form-wrapper_ready {
+  border-color: #b2f6a1;
+}
+
+.passanger-details {
+  display: flex;
+  align-items: center;
+  padding: 40px 32px 30px;
+  border-bottom: 1px solid #c4c4c4;
+  background-color: #f9f9f9;
+}
+
+.passanger-details-open {
+  border-bottom-style: dotted;
+}
+
+.passanger-form__button-hidden,
+.passanger-form__button-close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.btn-hidden {
+  position: relative;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #928f94;
+  border-radius: 50%;
+}
+
+.btn-hidden::before,
+.btn-hidden::after {
+  position: absolute;
+  top: 14px;
+  left: 7px;
+  width: 14px;
+  height: 2px;
+  background-color: #928f94;
+  content: "";
+}
+
+.btn-hidden::after {
+  transform: rotate(90deg);
+}
+
+.btn-hidden_open::after {
+  display: none;
+}
+
+.btn-close {
+  position: relative;
+  display: block;
+  width: 18px;
+  height: 18px;
+}
+
+.btn-close::before,
+.btn-close::after {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 18px;
+  height: 2px;
+  background-color: #928f94;
+  content: "";
+}
+
+.btn-close::before {
+  transform: rotate(45deg);
+}
+
+.btn-close::after {
+  transform: rotate(-45deg);
+}
+
+.passanger-form__title {
+  margin: 0 0 0 16px;
+  color: #292929;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.passanger-form__button-close {
+  margin-left: auto;
+}
+
+.passanger-form {
+  padding: 38px 0 32px;
+}
+
+.passanger-form > * {
+  padding: 0 35px
+}
+
+.passanger-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.passanger-form__field_type {
+  width: 280px;
+  margin-bottom: 36px;
+}
+
+.passanger-form__field_wide {
+  grid-column: span 2;
+}
+
+.ticket-category,
+.passanger-form__input {
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+  border: 1px solid #928f94;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #292929;
+  font-size: 24px;
+  font-weight: 400;
+  padding: 12px 14px;
+}
+
+.ticket-category {
+  appearance: none;
+  background-image: url('/icons/select.svg');
+  background-repeat: no-repeat;
+  background-position: right 10px top 50%;
+  background-size: 12px auto;
+}
+
+.ticket-category:disabled {
+  color: #292929;
+  opacity: 1;
+}
+
+.passanger-form__input_error {
+  border-color: #ff3d00;
+}
+
+.passanger-form__error {
+  color: #ff3d00;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+.passanger-form__seat {
+  margin: -18px 0 30px;
+  color: #928f94;
+  font-size: 16px;
+}
+
+.passanger-form__name-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+  margin-bottom: 48px;
+}
+
+.passanger-form__personal-grid {
+  display: grid;
+  grid-template-columns: 205px 240px;
+  gap: 35px;
+  align-items: start;
+  margin-bottom: 34px;
+}
+
+.passanger-form__label {
+  font-size: 16px;
+  font-weight: 400;
+  color: #928F94;
+}
+
+.passanger-form__gender {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+.passanger-form__gender .passanger-form__label {
+  grid-column: 1 / -1;
+  margin-bottom: 8px;
+}
+
+.passanger-form__gender-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  border: 1px solid #928f94;
+  color: #000000;
+  font-size: 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.passanger-form__gender-option:first-of-type {
+  border-radius: 5px 0 0 5px;
+}
+
+.passanger-form__gender-option:last-of-type {
+  border-left: 0;
+  border-radius: 0 5px 5px 0;
+}
+
+.passanger-form__gender-option input {
+  display: none;
+}
+
+.passanger-form__gender-option_active {
+  background-color: #ffa800;
+}
+
+.passanger-form__date-icon {
+  display: none;
+}
+
+.passanger-form__checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 34px;
+  color: #292929;
+  font-size: 18px;
+}
+
+.passanger-form__checkbox input {
+  width: 28px;
+  height: 28px;
+  accent-color: #ffa800;
+}
+
+.passanger-form__document {
+  display: grid;
+  grid-template-columns: 280px 205px 240px;
+  gap: 35px;
+  align-items: start;
+  padding-top: 34px;
+  border-top: 1px dotted #c4c4c4;
+}
+
+.passanger-form__select {
+  font-size: 18px;
+}
+
+.passanger-form__footer {
+  display: flex;
+  justify-content: flex-end;
+  margin: 34px 0 -32px;
+  padding: 39px 35px 36px;
+  border-top: 1px dotted #c4c4c4;
+}
+
+.passanger-form__footer_ready {
+  align-items: center;
+  justify-content: space-between;
+  min-height: 97px;
+  box-sizing: border-box;
+  background-color: #b2f6a1;
+  color: #292929;
+}
+
+.passanger-form__status {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  min-height: 97px;
+  box-sizing: border-box;
+  margin: 34px 0 -32px;
+  padding: 30px 35px;
+  font-size: 18px;
+  line-height: 1.25;
+}
+
+.passanger-form__status_error {
+  background-color: #ffb59e;
+  color: #292929;
+}
+
+.passanger-form__status-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.passanger-form__status-icon {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.passanger-form__status-icon_error::before,
+.passanger-form__status-icon_error::after {
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  background-color: #ff7b55;
+  content: "";
+}
+
+.passanger-form__status-icon_error::before {
+  transform: rotate(45deg);
+}
+
+.passanger-form__status-icon_error::after {
+  transform: rotate(-45deg);
+}
+
+.passanger-form__status-icon_ready::before {
+  width: 15px;
+  height: 8px;
+  border-bottom: 2px solid #80d86b;
+  border-left: 2px solid #80d86b;
+  transform: rotate(-45deg) translate(1px, -1px);
+  content: "";
+}
+
+.passanger-form__next {
+  min-width: 260px;
+  min-height: 52px;
+  border: 0;
+  color: #292929;
+  background-color: #FFFFFF;
+  border: 1px solid #292929;
+  font-size: 20px;
+  text-transform: lowercase;
+}
+
+.passanger-form__footer_ready .passanger-form__next {
+  background-color: transparent;
+  border: 1px solid #292929;
+}
+
+.passanger-form__select {
+  appearance: none;
+  background-image: url('/icons/select.svg');
+  background-repeat: no-repeat;
+  background-position: right 10px top 50%;
+  background-size: 12px auto;
+}

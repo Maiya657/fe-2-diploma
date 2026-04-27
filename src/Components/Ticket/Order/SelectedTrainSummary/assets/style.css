@@ -1,0 +1,142 @@
+.selected-train-summary__action {
+  margin: 34px 19px;
+}
+
+.selected-train-summary__action_right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.selected-train-summary__change-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+  color: #292929;
+}
+
+.selected-train-summary__change-icon {
+  width: 76px;
+  height: 60px;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  background-image: url(/icons/subtract.svg);
+  background-size: 76px 60px;
+  flex-shrink: 0;
+}
+
+.selected-train-summary__change-icon_rotated {
+  transform: rotate(180deg);
+}
+
+.selected-train-summary__change-btn {
+  width: 325px;
+  height: 60px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #292929;
+  border: 1px solid #292929;
+  background: none;
+  border-radius: 5px;
+  transition: all 0.2s;
+}
+
+.selected-train-summary__info {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 40px;
+  padding: 0 19px;
+  background-color: #F7F6F6;
+}
+
+.selected-train-summary__route {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  padding: 18px 36px;
+  border-left: 1px solid #FFFFFF;
+  border-right: 1px solid #FFFFFF;
+}
+
+.selected-train-summary__train {
+  display: grid;
+  grid-template-columns: 30px minmax(0, 1fr);
+  gap: 27px;
+  align-items: center;
+  padding: 18px 0;
+}
+
+.selected-train-summary__clock {
+  width: 30px;
+  height: 30px;
+  background-image: url('/icons/clock.svg');
+}
+
+.selected-train-summary__train-icon {
+  width: 30px;
+  height: 30px;
+  background-image: url('/icons/trainOrder.svg');
+}
+
+.selected-train-summary__train-name,
+.selected-train-summary__time {
+  font-size: 24px;
+  font-weight: 700;
+  color: #3E3C41;
+}
+
+.selected-train-summary__route-point {
+  font-size: 16px;
+  font-weight: 400;
+  color: #292929;
+}
+
+.selected-train-summary__city {
+  font-size: 18px;
+  font-weight: 400;
+  color: #292929;
+}
+
+.selected-train-summary__route-arrow {
+  display: inline-block;
+  width: 13px;
+  height: 10px;
+  margin-left: 8px;
+  mask-image: url('/icons/arrow.svg');
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  background-color: #928f94;
+}
+
+.selected-train-summary__station {
+  font-size: 16px;
+  font-weight: 400;
+  color: #928f94;
+}
+
+.selected-train-summary__duration {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  color: #292929;
+  padding: 18px 0;
+}
+
+.selected-train-summary__clock {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+}
+
+.selected-train-summary__direction-arrow {
+  width: 30px;
+  height: 20px;
+  background-image: url('/icons/arrowNew.svg');
+}

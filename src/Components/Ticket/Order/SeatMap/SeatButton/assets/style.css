@@ -1,0 +1,31 @@
+.seat-button {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border: none;
+  background-color: #c4c4c4;
+  font-size: clamp(12px, 1vw, 16px);
+  font-weight: 700;
+  color: #ffffff;
+  cursor: not-allowed;
+}
+
+.seat-button_available {
+  background-color: #f7f6f6;
+  color: #292929;
+  cursor: pointer;
+}
+
+.seat-button_available:hover,
+.seat-button_selected {
+  outline: 2px solid #ffa800;
+  outline-offset: -2px;
+  background-color: #fcdc9d;
+}
+
+.seat-button_side {
+  border-top: 4px solid #928f94;
+}
+
+.seat-button:disabled {
+  opacity: 1;
+}

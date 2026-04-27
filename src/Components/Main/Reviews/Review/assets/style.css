@@ -1,0 +1,56 @@
+.review {
+  display: flex;
+   align-items: center;
+   gap: 35px;
+}
+
+.user-image {
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  flex: 0 0 200px; 
+}
+
+.user-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.user-name {
+  font-size: 24px;
+  font-weight: 500;
+  color: #292929;
+  margin-bottom: 20px;
+}
+
+.user-review {
+  font-weight: 300;
+  font-style: italic;
+  color: #928F94;
+  position: relative;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.user-review::before, .user-review::after {
+  position: absolute;
+  color: #928F94;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.user-review::before {
+  content: "“";
+  margin: -10px 0 0 -20px;
+}
+
+.user-review::after {
+  content: "”";
+  margin: 10px 0 0 5px;
+}

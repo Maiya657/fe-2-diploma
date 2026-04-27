@@ -1,0 +1,93 @@
+.order-stepper {
+  position: relative;
+  height: 98px;
+  background-color: #3e3c41;
+}
+
+.order-stepper::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: '';
+  height: 98px;
+  width: 50%;
+  background-color: #ffa800;
+}
+
+.order-stepper_done::before {
+  width: 100%;
+}
+
+.order-stepper__content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 100%;
+  margin: 0 auto;
+}
+
+.order-stepper__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 700;
+  background-color: #3e3c41;
+}
+
+.order-stepper__item::before,
+.order-stepper__item::after {
+  position: absolute;
+  top: 0;
+  right: -33px;
+  bottom: 0;
+  z-index: 1;
+  width: 66px;
+  background-color: inherit;
+  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  content: "";
+}
+
+.order-stepper__item::after {
+  background-color: #3e3c41;
+}
+
+.order-stepper__item_active.order-stepper__item::after,
+ .order-stepper__item_done.order-stepper__item::after{
+  background-color: #ffa800;
+}
+
+.order-stepper__item::before {
+  background: #ffffff;
+  right: -34px;
+}
+
+.order-stepper__item:last-child::after, .order-stepper__item:last-child::before {
+  display: none;
+}
+
+.order-stepper__item_active,
+.order-stepper__item_done {
+  background-color: #ffa800;
+}
+
+.order-stepper__link {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.order-stepper__number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  font-size: 36px;
+}

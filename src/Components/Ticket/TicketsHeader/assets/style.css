@@ -1,0 +1,23 @@
+.header-tickets {
+  width: 100%;
+  background-image: url('/images/ticketBackground.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.header-tickets_success {
+  min-height: 834px;
+  background-image: url('/images/orderDone.png');
+  background-position: center top;
+}
+
+.header-tickets_success + .order-success-page {
+  margin-top: -208px;
+}
+
+.header-content, .main-content {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 258px;
+}

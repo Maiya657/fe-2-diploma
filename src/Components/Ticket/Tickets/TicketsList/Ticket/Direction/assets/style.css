@@ -1,0 +1,66 @@
+.direction-wrapper {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) 1fr minmax(0, 3fr);
+  align-items: first baseline;
+  column-gap: 38px;
+}
+
+.direction-wrapper-arrival {
+  direction: rtl;
+}
+
+.direction-wrapper-arrival > * {
+  direction: ltr;
+}
+
+.direction-from,
+.direction-to {
+  min-width: 0;
+  margin-bottom: 62px;
+}
+
+.direction-time {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.direction-city {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 6px;
+  color: #292929;
+}
+
+.direction-station {
+  font-size: 18px;
+  font-weight: 400;
+  color: #928f94;
+}
+
+.direction-middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.duration {
+  font-size: 18px;
+  font-weight: 400;
+  color: #c4c4c4;
+}
+
+.yellow-arrow {
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+  background-image: url('/icons/yellowArrow.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.direction-wrapper-arrival .yellow-arrow {
+  transform: rotate(180deg);
+}

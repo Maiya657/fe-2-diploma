@@ -1,0 +1,30 @@
+.header {
+  background-image: url('/images/firstScreenBackground.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: #FFFFFF;
+  width: 100%;
+  border-bottom: 8px solid #FFA800;
+}
+
+.header-content, .main-content {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 258px;
+}
+
+.header-form-grid {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-title {
+  font-size: 72px;
+  font-weight: 100;
+  margin: 415px 90px 0;
+}
+
+.main-title-strong {
+  font-weight: 700;
+}

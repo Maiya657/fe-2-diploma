@@ -1,0 +1,48 @@
+.ticket-sorted {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 95px;
+  color: #928F94;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.ticket-sorted__filters {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.sorted,
+.show-by {
+  display: flex;
+  align-items: center;
+}
+
+.ticket-sorted__label {
+  font-size: 18px;
+  font-weight: 400;
+  margin-right: 12px;
+}
+
+.ticket-limit {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.ticket-limit__button {
+  border: none;
+  padding: 0;
+  background: transparent;
+  color: #928F94;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.ticket-limit__button[data-active='true'] {
+  color: #292929;
+}

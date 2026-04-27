@@ -1,0 +1,241 @@
+.payment-page {
+  min-height: 1000px;
+  background-color: #f7f5f9;
+}
+
+.payment-page__content {
+  display: grid;
+  grid-template-columns: 360px minmax(0, 960px);
+  gap: 84px;
+  align-items: flex-start;
+  padding-top: 94px;
+  padding-bottom: 140px;
+}
+
+.payment-page__details-placeholder {
+  width: 360px;
+}
+
+.payment-page__empty {
+  padding: 42px;
+  border: 1px solid #c4c4c4;
+  background-color: #ffffff;
+  color: #292929;
+  box-shadow: 0 2px 2px rgba(62, 60, 65, 0.08);
+}
+
+.payment-page__title {
+  margin: 0 0 28px;
+  color: #292929;
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.payment-page__empty p {
+  margin: 0 0 28px;
+  font-size: 24px;
+}
+
+.payment-page__back-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 268px;
+  min-height: 60px;
+  border: 0;
+  color: #ffffff;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.payment-form {
+  width: 100%;
+  border: 1px solid #c4c4c4;
+  background-color: #ffffff;
+  color: #292929;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.payment-form__section {
+  border-bottom: 1px dotted #928f94;
+}
+
+.payment-form__section-title {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 35px 35px;
+  border-bottom: 1px dotted #928f94;
+  background-color: #f9f9f9;
+  color: #292929;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.payment-form__fields {
+  padding: 29px 34px 0;
+}
+
+.payment-form__fields_name {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 280px));
+  gap: 25px;
+}
+
+.payment-form__fields_contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding-bottom: 88px;
+}
+
+.payment-form__field {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.payment-form__field_contact {
+  width: 360px;
+}
+
+.payment-form__label {
+  margin-bottom: 8px;
+  color: #292929;
+  font-size: 16px;
+}
+
+.payment-form__input {
+  width: 100%;
+  height: 50px;
+  padding: 0 14px;
+  border: 1px solid #928f94;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #292929;
+  font-size: 24px;
+}
+
+.payment-form__input::placeholder {
+  color: #c4c4c4;
+}
+
+.payment-form__input[aria-invalid="true"] {
+  border-color: #ff3d00;
+}
+
+.payment-form__error {
+  margin-top: 6px;
+  color: #ff3d00;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.payment-form__section_payment {
+  border-bottom: 0;
+}
+
+.payment-form__methods {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 35px 82px;
+  border: 0;
+}
+
+.payment-form__methods-legend {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.payment-form__method {
+  display: inline-flex;
+  align-items: center;
+  width: max-content;
+  color: #928f94;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.payment-form__method_cash {
+  margin-top: 66px;
+}
+
+.payment-form__radio {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.payment-form__radio-box {
+  position: relative;
+  flex: 0 0 auto;
+  width: 28px;
+  height: 28px;
+  margin-right: 20px;
+  border: 1px solid #928f94;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.payment-form__radio:checked + .payment-form__radio-box {
+  border-color: #ffa800;
+}
+
+.payment-form__radio:checked + .payment-form__radio-box::before {
+  position: absolute;
+  top: 5px;
+  left: 6px;
+  width: 14px;
+  height: 8px;
+  border-bottom: 3px solid #ffa800;
+  border-left: 3px solid #ffa800;
+  transform: rotate(-45deg);
+  content: "";
+}
+
+.payment-form__radio:checked ~ .payment-form__method-title {
+  color: #ffa800;
+}
+
+.payment-form__online-options {
+  display: grid;
+  grid-template-columns: 184px 160px 220px;
+  gap: 56px;
+  margin-top: 22px;
+  color: #292929;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.payment-form__error_method {
+  margin-top: 22px;
+  font-size: 18px;
+}
+
+.payment-form__button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 28px;
+  margin-top: 116px;
+}
+
+.payment-form__status {
+  max-width: 240px;
+  margin-right: auto;
+  color: #292929;
+  font-size: 20px;
+}
+
+.payment-form__submit {
+  min-width: 323px;
+  min-height: 60px;
+  border: 0;
+  color: #ffffff;
+  font-size: 24px;
+}

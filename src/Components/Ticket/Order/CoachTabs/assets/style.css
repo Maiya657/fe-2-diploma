@@ -1,0 +1,58 @@
+.coach-tabs {
+  width: 100%;
+  background-color: #ffd98f;
+}
+
+.coach-tabs__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 8px 11px 8px 33px;
+}
+
+.coach-tabs__title {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #292929;
+}
+
+.coach-tabs__title-label {
+  flex-shrink: 0;
+}
+
+.coach-tabs__labels {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.coach-tabs__label {
+  padding: 0;
+  border: none;
+  background: none;
+  font-size: 24px;
+  font-weight: 700;
+  color: #292929;
+  cursor: pointer;
+}
+
+.coach-tabs__label_active {
+  color: #ffffff;
+}
+
+.coach-tabs__label:focus-visible {
+  outline: 1px solid #292929;
+  outline-offset: 2px;
+}
+
+.coach-tabs__hint {
+  max-width: 376px;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: right;
+  color: #292929;
+}

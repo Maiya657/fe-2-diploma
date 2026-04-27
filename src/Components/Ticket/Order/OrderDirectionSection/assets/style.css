@@ -1,0 +1,9 @@
+.order-direction-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 1px solid #c4c4c4;
+  box-shadow: 0px 2px 2px 0px #00000025;
+  background-color: #ffffff;
+  border-right: 1px solid #FFFFFF;
+}

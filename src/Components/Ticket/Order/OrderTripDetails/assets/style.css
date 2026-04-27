@@ -1,0 +1,139 @@
+.order-trip-details {
+  border: 1px solid #c4c4c4;
+  background-color: #3e3c41;
+  color: #ffffff;
+}
+
+.order-trip-details__title-row {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 28px 28px 24px;
+  border-bottom: 1px solid #928f94;
+}
+
+.order-trip-details__title-icon {
+  width: 32px;
+  height: 32px;
+  mask-image: url('/icons/train.svg');
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  background-color: currentColor;
+}
+
+.order-trip-details__title {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.order-trip-details__change-link {
+  display: block;
+  margin: 28px;
+  padding: 14px 20px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.order-trip-details__train {
+  display: grid;
+  grid-template-columns: 64px minmax(0, 1fr);
+  gap: 18px;
+  align-items: center;
+  padding: 0 28px 28px;
+  border-bottom: 1px solid #928f94;
+}
+
+.order-trip-details__train-icon {
+  width: 64px;
+  height: 64px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  mask-image: url('/icons/train.svg');
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 48px 48px;
+  background-color: #ffffff;
+}
+
+.order-trip-details__train-name {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.order-trip-details__route {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  line-height: 1.35;
+  color: #e5e5e5;
+}
+
+.order-trip-details__route-arrow {
+  width: 18px;
+  height: 12px;
+  mask-image: url('/icons/arrow.svg');
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  background-color: #ffa800;
+}
+
+.order-trip-details__empty {
+  padding: 0 28px 28px;
+  border-bottom: 1px solid #928f94;
+  font-size: 18px;
+  color: #e5e5e5;
+}
+
+.order-trip-details__direction {
+  padding: 28px;
+  border-bottom: 1px solid #928f94;
+}
+
+.order-trip-details__direction:last-child {
+  border-bottom: none;
+}
+
+.order-trip-details__direction-label {
+  margin-bottom: 12px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.order-trip-details__date {
+  margin-bottom: 18px;
+  font-size: 18px;
+  color: #c4c4c4;
+}
+
+.order-trip-details__points {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.order-trip-details__time {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.order-trip-details__city {
+  margin-top: 6px;
+  font-size: 18px;
+}
+
+.order-trip-details__station,
+.order-trip-details__duration {
+  margin-top: 4px;
+  font-size: 16px;
+  line-height: 1.35;
+  color: #c4c4c4;
+}

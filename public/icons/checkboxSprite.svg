@@ -1,0 +1,10 @@
+<svg width="144" height="28" viewBox="0 0 144 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <rect y="4" width="72" height="19" rx="9.5" fill="white"/>
+    <circle cx="14" cy="14" r="14" fill="#C4C4C4"/>
+  </g>
+  <g transform="translate(72)">
+    <rect y="4" width="72" height="19" rx="9.5" fill="#FCDC9D"/>
+    <circle cx="58" cy="14" r="14" fill="#FFA800"/>
+  </g>
+</svg>

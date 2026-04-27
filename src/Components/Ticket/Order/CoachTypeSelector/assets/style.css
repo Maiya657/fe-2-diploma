@@ -1,0 +1,79 @@
+.coach-type-selector {
+  padding: 28px 19px 30px;
+  border-top: 1px dashed #C4C4C4;
+  margin-top: 50px;
+  border-bottom: none;
+  background-color: #ffffff;
+}
+
+.coach-type-selector__title {
+  margin-bottom: 28px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #292929;
+}
+
+.coach-type-selector__list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.coach-type-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 156px;
+  padding: 18px 12px 14px;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  color: #c4c4c4;
+  cursor: pointer;
+}
+
+.coach-type-card_active {
+  color: #ffa800;
+}
+
+.coach-type-card__icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 18px;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  background-color: currentColor;
+}
+
+.coach-type-card__icon_first {
+  mask-image: url('/icons/deluxe.svg');
+}
+
+.coach-type-card__icon_second {
+  mask-image: url('/icons/compartment.svg');
+}
+
+.coach-type-card__icon_third {
+  mask-image: url('/icons/reservedSeat.svg');
+}
+
+.coach-type-card__icon_fourth {
+  mask-image: url('/icons/seatedСarriage.svg');
+}
+
+.coach-type-card__label {
+  font-size: 24px;
+  font-weight: 400;
+  color: #928F94;
+}
+
+.coach-type-card_active .coach-type-card__label {
+  color: #ffa800;
+}
+
+.coach-type-card__meta {
+  font-size: 14px;
+  text-align: center;
+  color: #928f94;
+}

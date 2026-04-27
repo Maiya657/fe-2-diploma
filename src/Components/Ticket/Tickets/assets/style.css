@@ -1,0 +1,10 @@
+.main-content-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  justify-content: space-between;
+}
+
+.main-content__article {
+  flex-basis: 100%;
+}

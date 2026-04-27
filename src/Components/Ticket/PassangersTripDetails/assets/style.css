@@ -1,0 +1,251 @@
+.passangers-trip-details {
+  width: 360px;
+  background-color: #3e3c41;
+  color: #ffffff;
+}
+
+.passangers-trip-details__title {
+  margin: 0;
+  padding: 34px 43px 34px;
+  border-bottom: 1px solid #e5e5e5;
+  color: #e5e5e5;
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.passangers-trip-details__section {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.passangers-trip-details__section-head {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 27px 32px;
+  border: 0;
+  background-color: transparent;
+  color: #ffffff;
+  text-align: left;
+  cursor: pointer;
+}
+
+.passangers-trip-details__info-date {
+  vertical-align: text-bottom;
+}
+
+.passangers-trip-details__section-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.passangers-trip-details__section-date {
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.passangers-trip-details__direction-icon,
+.passangers-trip-details__passenger-icon {
+  display: block;
+  background-color: #ffa800;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+}
+
+.passangers-trip-details__direction-icon {
+  width: 32px;
+  height: 26px;
+  mask-image: url('/icons/subtract.svg');
+ 
+}
+
+.passangers-trip-details__direction-icon_arrival {
+  transform: rotate(180deg);
+}
+
+.passangers-trip-details__passenger-icon {
+  width: 26px;
+  height: 26px;
+  mask-image: url('/icons/passanger.svg');
+}
+
+.passangers-trip-details__collapse-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url('/icons/filtersOpened.svg');
+  justify-self: end;
+}
+
+.passangers-trip-details__section-head[aria-expanded="false"] .passangers-trip-details__collapse-icon {
+  background-image: url('/icons/filtersClosed.svg');
+}
+
+.passangers-trip-details__direction-body {
+  padding: 0 25px 39px;
+}
+
+.passangers-trip-details__meta-row {
+  display: grid;
+  grid-template-columns: 130px minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+  margin-bottom: 16px;
+  color: #e5e5e5;
+  font-size: 18px;
+}
+
+.passangers-trip-details__meta-row strong {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: right;
+  word-break: break-word;
+}
+
+.passangers-trip-details__route-row {
+  display: grid;
+  grid-template-columns: 98px 1fr 98px;
+  gap: 14px;
+  align-items: center;
+  padding-top: 26px;
+}
+
+.passangers-trip-details__route-point {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.passangers-trip-details__route-point_end {
+  text-align: right;
+}
+
+.passangers-trip-details__route-point strong {
+  font-size: 24px;
+}
+
+.passangers-trip-details__route-point span {
+  color: #928f94;
+  font-size: 18px;
+}
+
+.passangers-trip-details__duration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  color: #e5e5e5;
+  font-size: 18px;
+}
+
+.passangers-trip-details__duration-arrow {
+  display: block;
+  width: 30px;
+  height: 20px;
+  background-color: #ffa800;
+  mask-image: url('/icons/yellowArrow.svg');
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+}
+
+.passangers-trip-details__duration-arrow_arrival {
+  transform: rotate(180deg);
+}
+
+.passangers-trip-details__stations {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 16px;
+  padding-top: 18px;
+}
+
+.passangers-trip-details__stations div {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.passangers-trip-details__stations div:last-child {
+  text-align: right;
+}
+
+.passangers-trip-details__stations strong {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.passangers-trip-details__stations span {
+  color: #928f94;
+  font-size: 18px;
+}
+
+.passangers-trip-details__empty {
+  margin: 0;
+  padding: 0 25px 32px;
+  color: #e5e5e5;
+  font-size: 16px;
+}
+
+.passangers-trip-details__passengers {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 16px 25px 42px;
+}
+
+.passangers-trip-details__passenger-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) max-content;
+  gap: 18px;
+  align-items: baseline;
+  color: #e5e5e5;
+  font-size: 18px;
+}
+
+.passangers-trip-details__passenger-row strong {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.passangers-trip-details__passenger-row .passangers-trip-details__currency {
+  margin-left: 4px;
+  color: #928f94;
+  font-weight: 400;
+}
+
+.passangers-trip-details__total {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) max-content;
+  gap: 18px;
+  align-items: baseline;
+  min-height: 108px;
+  padding: 28px 25px 26px;
+  text-transform: uppercase;
+}
+
+.passangers-trip-details__total-label {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.passangers-trip-details__total strong {
+  color: #ffa800;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.passangers-trip-details__total-currency {
+  margin-left: 8px;
+  color: #e5e5e5;
+  font-size: 44px;
+  font-weight: 400;
+}
