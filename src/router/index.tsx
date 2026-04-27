@@ -58,6 +58,6 @@ export const router = createBrowserRouter([
   },
 ], 
 { 
-  basename: "/fe-2-diploma ",
+  basename: "/fe-2-diploma/",
 }
 )
