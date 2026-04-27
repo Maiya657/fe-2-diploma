@@ -8,7 +8,7 @@ interface Props {
 function OrderSuccessInstruction({ icon, text }: Props) {
   return (
     <article className="order-success-instruction">
-      <img className="order-success-instruction__icon" src={icon} alt="" />
+      <img className="order-success-instruction__icon" src={icon} alt="icon" />
       <p>{text}</p>
     </article>
   );

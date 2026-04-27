@@ -5,17 +5,21 @@ import OrderSuccessInstruction from "./OrderSuccessInstruction";
 import OrderSuccessRating from "./OrderSuccessRating";
 import "./assets/style.css";
 
+import sendTicket from "../../../../public/icons/sendTicket.svg"
+import printTicket from "../../../../public/icons/printTicket.svg"
+import showTicket from "../../../../public/icons/showTicket.svg"
+
 const instructions = [
   {
-    icon: "/icons/sendTicket.svg",
+    icon: sendTicket,
     text: "билеты будут отправлены на ваш e-mail",
   },
   {
-    icon: "/icons/printTicket.svg",
+    icon: printTicket,
     text: "распечатайте и сохраняйте билеты до даты поездки",
   },
   {
-    icon: "/icons/showTicket.svg",
+    icon: showTicket,
     text: "предъявите распечатанные билеты при посадке",
   },
 ];
